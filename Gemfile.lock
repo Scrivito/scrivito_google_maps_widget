@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    scrivito_google_maps_widget (0.1.1)
+    scrivito_google_maps_widget (0.1.2)
       bundler
       scrivito_sdk
 
