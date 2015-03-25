@@ -16,6 +16,7 @@ Add this line to your application's `Gemfile`:
     gem 'scrivito_google_maps_widget'
 
 Include the Google Maps Places JavaScript library in your application layout:
+Do not forget to add this load this line in your scrivito_dialog view.
 
     javascript_include_tag('//maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places')
 
