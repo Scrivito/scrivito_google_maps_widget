@@ -1,0 +1,13 @@
+<%= scrivito_details_for 'Address' do %>
+  <div class="google-maps" style="height: 320px">
+    <% if scrivito_in_editable_view? %>
+      <%= scrivito_tag(:input, widget, :address, type: 'text', data: { editor: 'google-maps' }) %>
+    <% end %>
+
+    <div class="map" data-location="<%= widget.address %>"></div>
+  </div>
+<% end %>
+
+<%= scrivito_details_for 'Height' do %>
+  <%= scrivito_tag(:div, widget, :height) %>
+<% end %>

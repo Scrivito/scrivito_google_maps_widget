@@ -1,4 +1,4 @@
-<div class="google-maps">
+<div class="google-maps" style="height: <%= widget.height %>">
   <% if scrivito_in_editable_view? %>
     <%= scrivito_tag(:input, widget, :address, type: 'text', data: { editor: 'google-maps' }) %>
   <% end %>
