@@ -1,8 +1,6 @@
 # Scrivito: Google Maps Widget
 
 [![Gem Version](https://badge.fury.io/rb/scrivito_google_maps_widget.svg)](http://badge.fury.io/rb/scrivito_google_maps_widget)
-[![Code Climate](https://codeclimate.com/github/Scrivito/scrivito_google_maps_widget.png)](https://codeclimate.com/github/Scrivito/scrivito_google_maps_widget)
-[![Dependency Status](https://gemnasium.com/Scrivito/scrivito_google_maps_widget.png)](https://gemnasium.com/Scrivito/scrivito_google_maps_widget)
 
 The google maps widget is based on the
 [Google Places JavaScript API](https://developers.google.com/maps/documentation/javascript/places).
@@ -22,37 +20,11 @@ Do not forget to add this load this line in your scrivito_dialog view.
 
 Add this line to your application JavaScript manifest:
 
-    //= require google_maps_widget/application
-
-Add this line to your editing JavaScript manifest:
-
-    //= require google_maps_widget/editing
+    //= require scrivito_google_maps_widget
 
 Add this line to your application Stylesheet manifest:
 
-    *= require google_maps_widget/application
-
-Add this line to your editing Stylesheet manifest:
-
-    *= require google_maps_widget/editing
-
-And then execute:
-
-    $ bundle
-    $ rake scrivito:migrate:install
-    $ rake scrivito:migrate
-    $ rake scrivito:migrate:publish
-
-
-## Usage
-
-If you followed the installation instructions, you have now successfully integrated the Google Maps
-widget into your project und published the new CMS object class. Editors of your webpage can now
-select the widget from the **Widget Browser** and immediately choose a location.
-
-In case you want to adopt the styles of the widget, feel free to redefine the `.google-maps .map`
-CSS class, which is the container the map gets rendered to.
-
+    *= require scrivito_google_maps_widget
 
 ## Contributing
 
