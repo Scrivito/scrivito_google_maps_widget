@@ -31,7 +31,7 @@ $ ->
 
         mapOptions =
           center: new google.maps.LatLng(-33.8688, 151.2195)
-          zoom: 13
+          zoom: parseInt(canvas.data('zoom')) || 13
           scrollwheel: false
 
         map = new google.maps.Map(canvas[0], mapOptions)

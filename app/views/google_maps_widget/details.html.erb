@@ -1,7 +1,7 @@
 <%= scrivito_details_for 'Address' do %>
   <div class="google-maps" style="height: 320px">
     <% if scrivito_in_editable_view? %>
-      <%= scrivito_tag(:input, widget, :address, type: 'text', data: { editor: 'google-maps' }) %>
+      <%= scrivito_tag(:input, widget, :address, type: 'text') %>
     <% end %>
 
     <div class="map" data-location="<%= widget.address %>"></div>
@@ -10,4 +10,8 @@
 
 <%= scrivito_details_for 'Height' do %>
   <%= scrivito_tag(:div, widget, :height) %>
+<% end %>
+
+<%= scrivito_details_for 'Initial zoom' do %>
+  <%= scrivito_tag(:div, widget, :zoom) %>
 <% end %>
