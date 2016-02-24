@@ -8,7 +8,6 @@ $ ->
         return
 
       map.setCenter(place.geometry.location)
-      map.setZoom(17)
 
       marker.setPosition(place.geometry.location)
       marker.setVisible(true)
@@ -31,7 +30,7 @@ $ ->
 
         mapOptions =
           center: new google.maps.LatLng(-33.8688, 151.2195)
-          zoom: parseInt(canvas.data('zoom')) || 13
+          zoom: parseInt(canvas.data('zoom'))
           scrollwheel: false
 
         map = new google.maps.Map(canvas[0], mapOptions)
