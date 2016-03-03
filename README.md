@@ -12,11 +12,11 @@ Add this line to your application's `Gemfile`:
 
 Include the Google Maps Places JavaScript library in your application.html.erb:
 
-    javascript_include_tag('//maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places')
+    javascript_include_tag('//maps.googleapis.com/maps/api/js?v=3.exp&libraries=places')
 
 Include the Google Maps Places JavaScript library in your scrivito_dialog.html.erb:
 
-    javascript_include_tag('//maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places')
+    javascript_include_tag('//maps.googleapis.com/maps/api/js?v=3.exp&libraries=places')
 
 Also, add this line to your application stylesheet manifest:
 
