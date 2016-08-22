@@ -32,3 +32,19 @@ If you use `sass-rails` for your application stylesheet manifest (e.g. `applicat
 Finally, add this line to your application JavaScript manifest:
 
     //= require scrivito_google_maps_widget
+
+## Localization
+
+The following code represents the default localization for English. Copy it to your `en.yml` and change it if necessary:
+
+```yaml
+en:
+  scrivito_google_maps_widget:
+    thumbnail:
+      title: Google Maps
+      description: Integrates a map that displays a pin for a given address
+    details:
+      height: Height
+      zoom: Initial Zoom
+      address: Address
+```
