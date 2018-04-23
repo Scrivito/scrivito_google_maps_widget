@@ -14,7 +14,7 @@ $ ->
         infoWindow = canvas.data('infoWindow')
         marker = canvas.data('marker')
 
-        input = widget.find('input')
+        input = widget.find('input.address-input')
         input.show()
 
         content = canvas.attr('data-location')
@@ -25,10 +25,12 @@ $ ->
         autocomplete = new google.maps.places.Autocomplete(input[0])
         autocomplete.bindTo('bounds', map)
 
+        scrivitoAddressField = widget.find('.scrivito-address-field')
+
         google.maps.event.addListener(autocomplete, 'place_changed', ->
           place = autocomplete.getPlace()
           googleMapsWidget.placeMarker(map, infoWindow, marker, place)
-          input.scrivito('save', place.formatted_address)
+          scrivitoAddressField.scrivito('save', place.formatted_address)
         )
       else
         widgets.html('Google API is not initialized')
