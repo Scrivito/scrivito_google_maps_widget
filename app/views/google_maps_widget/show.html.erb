@@ -1,6 +1,7 @@
 <div class="google-maps" style="height: <%= widget.height %>">
   <% if scrivito_in_editable_view? %>
-    <%= scrivito_tag(:input, widget, :address, type: 'text') %>
+    <input type="text" class="address-input"></input>
+    <%= scrivito_tag(:div, widget, :address, class: 'scrivito-address-field hidden') %>
   <% end %>
 
   <div class="map" data-zoom="<%= widget.zoom_level %>" data-location="<%= widget.address %>"></div>
